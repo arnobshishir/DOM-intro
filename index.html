@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of dom</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .important-places{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header>Welcome to my DOM chapter</header>
+    <main>
+        <section>
+            <h1>My First Dom starts</h1>
+            <ul>
+            <li>JALALI SET</li>
+            <li>Arnob Shishir</li>
+            <li>Dom de baba</li>
+            
+        </ul>
+        </section>
+        <section class="flower-container">
+
+            <h1 id="flower-title">Flowers I like most</h1>
+            <ul>
+                <li>Frangipani</li>
+                <li>Rose</li>
+                <li>Water lily</li>
+                <li>Daisy</li>
+                <li>Marigold</li>
+
+            </ul>
+        </section>
+        <section>
+            <h1 id="places">Places I like to visit</h1>
+            <ul>
+                <li class="important-places">Paris</li>
+                <li class="important-places">Maldives</li>
+                <li class="important-places">Kashmir</li>
+                <li>Nayagra</li>
+                <li>Venice</li>
+            </ul>
+        </section>
+    </main>
+<script src="js/dom.js"></script>
+<script>
+     const licollection = document.getElementsByTagName('li')
+     //console.log(licollection);
+     for(const li of licollection){
+        console.log(li);
+     }
+     const places= document.getElementsByClassName('important-places');
+     for(const place of places){
+       console.log(place.innerText)
+     }
+     //querySelectorAll
+     const someLi = document.querySelectorAll('.flower-container li');
+     console.log(someLi);
+     for(const li of someLi){
+        console.log(li.innerText);
+     }
+</script>
+</body>
+
+</html>
