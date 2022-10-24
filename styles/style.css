@@ -1,3 +1,8 @@
 li{
     color:lightcoral;
 }
+
+.text-center{
+    background-color: yellowgreen !important;
+    text-align: center;
+}

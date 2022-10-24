@@ -36,7 +36,7 @@
 
             </ul>
         </section>
-        <section>
+        <section id="places-container">
             <h1 id="places">Places I like to visit</h1>
             <ul>
                 <li class="important-places">Paris</li>
@@ -48,21 +48,22 @@
         </section>
     </main>
 <script src="js/dom.js"></script>
+<script src="js/styleInJs.js"></script>
 <script>
      const licollection = document.getElementsByTagName('li')
      //console.log(licollection);
      for(const li of licollection){
-        console.log(li);
+        //console.log(li);
      }
      const places= document.getElementsByClassName('important-places');
      for(const place of places){
-       console.log(place.innerText)
+       //console.log(place.innerText)
      }
      //querySelectorAll
      const someLi = document.querySelectorAll('.flower-container li');
-     console.log(someLi);
+     //console.log(someLi);
      for(const li of someLi){
-        console.log(li.innerText);
+        //console.log(li.innerText);
      }
 </script>
 </body>
