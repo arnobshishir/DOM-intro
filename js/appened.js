@@ -27,3 +27,16 @@ li3.innerText = 'Coke';
 ul.appendChild(li3);
 
 section.appendChild(ul);
+
+// set Html directly 
+const sectionDress = document.createElement('section');
+sectionDress.innerHTML = `
+<h1>My Favorite dresses</h1>
+<ul>
+    <li>Shirt</li>
+    <li>Pant</li>
+    <li>Jeans</li>
+    <li>Panjabi</li>
+</ul>
+`
+mainContainer.appendChild(sectionDress);
